@@ -4,15 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>my Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <strong> My  PORTFOLIO</strong></a>
+                <strong> SAMUEL KUMELA </strong></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,68 +24,163 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serivces</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class=" nav-item ">
+                        <a class="nav-link " href="#contact-me ">Contact</a>
                 </ul>
 
             </div>
         </div>
     </nav>
-    <div class="bg-image" style="background-image: url('s.jpg'); position: relative; height: 100vh; background-size: cover; background-position: center;">
-        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center;">
-            <h1 style="color: white; font-size: 3rem;">Welcome</h1>
+
+    <div class="bg-image " style="background-image: url( 's.jpg'); position: relative; height: 100vh; background-size: cover; background-position: center; ">
+        <div class="overlay " style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center; ">
+            <h1 style="color: white; font-size: 3rem; ">Welcome</h1>
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Toggle width collapse
+                </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px;">
+                        This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
     <br>
-    < < <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div id="about" class="container my-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>About Me</h2>
+                <p class="lead">I am a passionate web developer with a love for creating dynamic and responsive websites.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="bi bi-person-circle" style="font-size: 3rem; color: #0056b3;"></i>
+                        <h5 class="card-title mt-3">My Background</h5>
+                        <p class="card-text">I have a background in computer science and have been working in web development for over 5 years.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="bi bi-laptop" style="font-size: 3rem; color: #0056b3;"></i>
+                        <h5 class="card-title mt-3">My Skills</h5>
+                        <p class="card-text">I specialize in HTML, CSS, JavaScript, and various frameworks like React and Angular.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <i class="bi bi-briefcase" style="font-size: 3rem; color: #0056b3;"></i>
+                        <h5 class="card-title mt-3">My Experience</h5>
+                        <p class="card-text">I have worked on numerous projects ranging from small business websites to large-scale web applications.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a short card.</p>
+    </div>
+
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+    </style>
+    <div id="services" class="basic-2"></div>
+    <div class="container ">
+        <div class="row ">
+            <div class="col-lg-12 ">
+                <h2 class="h2-heading text-center "> services</h2>
+                <p class="p-heading ">Web design and development have been my passion in collage , During that time I've discovered that I can help startups and companies with the following services</p>
+            </div>
+            <!-- end of col -->
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col ">
+                <div class="card h-100 text-center ">
+                    <div class="card-body ">
+                        <i class="bi bi-gem " style="font-size: 3rem; color: #0056b3; "></i>
+                        <h5 class="card-title mt-3 ">DESIGN</h5>
+                        <p class="card-text ">Successful online projects start with good design. It establishes a solid foundation for future development and allows for long-term growth.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card h-100 text-center ">
+                    <div class="card-body ">
+                        <i class="bi bi-code-slash " style="font-size: 3rem; color: #0056b3; "></i>
+                        <h5 class="card-title mt-3 ">DEVELOPMENT</h5>
+                        <p class="card-text ">I can code my own designs or even use the customer’s design as a base. My focus is to generate clean code that’s well-structured for reliability.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="card h-100 text-center ">
+                    <div class="card-body ">
+                        <i class="bi bi-display " style="font-size: 3rem; color: #0056b3; "></i>
+                        <h5 class="card-title mt-3 ">BASIC SEO</h5>
+                        <p class="card-text ">I can set up your project to use basic SEO principles which will push your project to the first page on search engines and save you ad money.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-            </div>
+
+
+
+        <br>
+        <br>
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz " crossorigin="anonymous "></script>
+        <div class="container text-center my-5">
+            <h2 id="contact-me">Contact Me</h2>
         </div>
+        <div class="mb-3">
+
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+        </div>
+        <div class="mb-3">
+
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Email">
+        </div>
+        <div class="mb-3">
+
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="text here "></textarea>
+
+        </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">submit</button>
+
+        </div><br>
 
 
 
-
-
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <footer class="bg-dark text-white text-center py-3">
-            <div class="container">
-                <p class="mb-0">&copy; 2023 My Portfolio. All rights reserved.</p>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
-                    <li class="list-inline-item"><a href="#" class="text-white">Terms of Use</a></li>
-                    <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+        <footer class="bg-dark text-white text-center py-3 ">
+            <div class="container ">
+                <p class="mb-0 ">&copy; 2025 My Portfolio. All rights reserved.</p>
+                <ul class="list-inline ">
+                    <li class="list-inline-item "><a href="# " class="text-white ">Privacy Policy</a></li>
+                    <li class="list-inline-item "><a href="# " class="text-white ">Terms of Use</a></li>
+                    <li class="list-inline-item "><a href="# " class="text-white ">Contact</a></li>
                 </ul>
             </div>
         </footer>
